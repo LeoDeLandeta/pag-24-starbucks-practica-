@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag-24(practica)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="cicle"></div>
+        <header>
+            <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+           <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#new">What´s New</a></li>
+            <li><a href="#contact">Contact</a></li>
+           </ul>
+        </header>
+        <div class="content" id="home">
+            <div class="text__box">
+                <h2>It´s not just Coffe <br>It´s <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima qui doloribus nam tenetur explicabo repellat, neque quisquam hic eius, similique voluptatibus ex expedita doloremque repellendus accusamus laboriosam. Dolor, similique reiciendis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img__box">
+                <img src="img/img1.png" alt="" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" alt="" onclick="imgSlider('img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="img/thumb2.png" alt="" onclick="imgSlider('img/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="img/thumb3.png" alt="" onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1')"></li>
+            
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <!--shop coffee-->
+        <section class="shop" id="menu">
+            <div class="heading">
+                <span>Shop Now</span>
+                <h1>Shop Coffee</h1>
+            </div>
+            <div class="shop-container">
+                <div class="box">
+                    <box-img>
+                        <img src="img/img1.png" alt="">
+                    </box-img>
+                    <div class="price">
+                        <h2>Starbucks Coffee</h2>
+                        <span>$12.4</span>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <box-img>
+                        <img src="img/img2.png" alt="">
+                    </box-img>
+                    <div class="price">
+                        <h2>Starbucks Coffee</h2>
+                        <span>$12.4</span>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <box-img>
+                        <img src="img/img3.png" alt="">
+                    </box-img>
+                    <div class="price">
+                        <h2>Starbucks Coffee</h2>
+                        <span>$12.4</span>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--what´s new-->
+        <section class="new" id="new">
+            <div class="heading">
+                <span>Get Now</span>
+                <h1 >Order width Uber Eats</h1>
+            </div>
+            <div class="container">
+                <div class="delivery-img">
+                    <img src="img/delivery.png" id="gate-right" alt="">
+                </div>
+                <div class="delivery-text">
+                    <h2 >Today deserve delivery</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aperiam dolorum dolor molestias. Reprehenderit voluptate perspiciatis fugit a, sequi labore ducimus corporis eligendi, quam provident enim sint quas optio sit?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga sunt repudiandae labore aut nulla distinctio illum dicta commodi adipisci ut vero, doloribus officia delectus molestiae, architecto dolores voluptatum neque! Dolorem.</p>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
+            </div>
+        </section>
+        <!--contact-->
+      <section class="contact" id="contact">
+        <div class="location__maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1935300.8911693154!2d-71.25127490950642!3d18.66917586912605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8838def1b6f5%3A0xa6020f24060df7e0!2sRep%C3%BAblica%20Dominicana!5e0!3m2!1ses-419!2sdo!4v1647907141906!5m2!1ses-419!2sdo" frameborder="0" style="border:0;" allowfullscreen loading="lazy"></iframe>
+
+        </div>
+        <div class="form__contact">
+            <h2>Contactenos</h2>
+            <form action="">
+                <div class="name__mail">
+                    <input type="text" placeholder="Nombre" name="nombre">
+                    <input type="email" name="correo" id="" placeholder="Correo electrónico">
+                </div>
+                <div class="subject__telephone">
+                    <input type="text" placeholder="Tema" name="tema">
+                    <input type="text" placeholder="Teléfono" name="tefono">
+                </div>
+                <input type="submit" class="btn">
+            </form>
+        </div>
+      </section>
+       
+    <script src="app.js"></script>
+   
+</body>
+</html>
